@@ -1,17 +1,17 @@
-#root {
+$standart_space: 10px;
+
+#root{
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-
     #app_div {
+      padding: $standart_space;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 10fr 1fr 10fr;
       grid-template-rows: 1fr;
-      width: 100%;
-      height: 100%;
-
-      textarea {
-        width: 100%;
-        height: 100%;
-      }
+      gap: $standart_space;
+      height: calc(100% - ($standart_space * 2));
     }
 }
